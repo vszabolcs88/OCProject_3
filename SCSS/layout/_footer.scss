@@ -1,0 +1,14 @@
+// Footer
+.footer-list {
+    background-color: darken(#fff, 80%);
+    padding: 1rem 1rem;
+    &__item {
+        a {
+            color: #fff;
+            line-height: 2;
+        }
+        &--first {
+            font-weight: bold;
+        }
+    }
+}

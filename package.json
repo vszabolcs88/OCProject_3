@@ -1,0 +1,17 @@
+{
+  "name": "project_3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch ./SCSS/main.scss:./css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

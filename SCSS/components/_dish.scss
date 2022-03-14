@@ -1,0 +1,19 @@
+// dishes block with the name of the food, ingridients and price
+.dish {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: space-between;
+    height: 4.5rem;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 1rem 0;
+    padding: 1rem;
+    &__title{
+        font-weight: bold;
+    }
+    &__price {
+        font-weight: bold;
+    }
+}
