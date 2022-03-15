@@ -1,5 +1,10 @@
 //main section of the homepage
 main {
-    padding: 4rem 0.75rem;
+    padding: 3rem 0.75rem;
+    padding-top: 0;
     background-color: darken(#fff, 5%);
+}
+
+.main__title {
+    padding: 1.5rem 0;
 }

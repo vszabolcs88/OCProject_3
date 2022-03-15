@@ -4,6 +4,7 @@
     border-radius: 16px;
     box-shadow: 0px 0px 5px grey;
     margin-bottom: 1rem;
+    position: relative;
     &__image {
         height: 70%;
         & img {
@@ -33,7 +34,13 @@
             &:hover {
                 .card-content__icon--solid {
                     display: block;
-                    color: pink;
+                    background: -moz-linear-gradient(top, $primary-color 0%, $secondary-color 100%);
+                    background: -webkit-linear-gradient(top, $primary-color 0%, $secondary-color 100%);
+                    background: linear-gradient(to bottom, $primary-color 0%, $secondary-color 100%);
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
                 .card-content__icon--regular {
                     display: none;

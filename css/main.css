@@ -32,18 +32,6 @@ img {
   text-transform: uppercase;
 }
 
-.mdish__title {
-  text-transform: uppercase;
-}
-
-.dessert__title {
-  text-transform: uppercase;
-}
-
-.adds__uppercase {
-  text-transform: uppercase;
-}
-
 .logo {
   width: 40%;
   height: 10vh;
@@ -64,6 +52,7 @@ img {
   -webkit-box-shadow: 0px 0px 5px grey;
           box-shadow: 0px 0px 5px grey;
   margin-bottom: 1rem;
+  position: relative;
 }
 
 .card__image {
@@ -112,7 +101,11 @@ img {
 
 .card .card-content__icon:hover .card-content__icon--solid {
   display: block;
-  color: pink;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .card .card-content__icon:hover .card-content__icon--regular {
@@ -154,6 +147,15 @@ img {
   height: 0.25rem;
   margin: 0.25rem 0;
   background-color: #99E2D0;
+}
+
+.label {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  padding: 0.25rem 1.5rem;
+  background-color: #99E2D0;
+  color: #217460;
 }
 
 .map {
@@ -267,8 +269,13 @@ section .instruction__block:hover i {
 }
 
 main {
-  padding: 4rem 0.75rem;
+  padding: 3rem 0.75rem;
+  padding-top: 0;
   background-color: #f2f2f2;
+}
+
+.main__title {
+  padding: 1.5rem 0;
 }
 
 .footer-list {
@@ -282,6 +289,6 @@ main {
 }
 
 .footer-list__item--first {
-  font-weight: bold;
+  font-family: 'Shrikhand', cursive;
 }
 /*# sourceMappingURL=main.css.map */
