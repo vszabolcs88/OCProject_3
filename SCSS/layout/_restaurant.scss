@@ -8,3 +8,45 @@ main {
 .main__title {
     padding: 1.5rem 0;
 }
+
+// main section with border-radius
+.add__border {
+    border-radius: 2rem 2rem 0 0;
+    margin-top: -2rem;
+    padding-top: 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+// restaurant name with the hearth icon
+// .restaurant {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin-bottom: 1rem;
+//     &__icon {
+//         width: 10%;
+//         font-size: 1.25rem;
+//         &--regular {
+//             display: block;
+//         }
+//         &--solid {
+//             display: none;
+//         }
+//         &:hover {
+//             .restaurant__icon--solid {
+//                 display: block;
+//                 background: -moz-linear-gradient(top, $primary-color 20%, $secondary-color 100%);
+//                 background: -webkit-linear-gradient(top, $primary-color 20%, $secondary-color 100%);
+//                 background: linear-gradient(to bottom, $primary-color 20%, $secondary-color 100%);
+//                 -webkit-background-clip: text;
+//                 -moz-background-clip: text;
+//                 background-clip: text;
+//                 -webkit-text-fill-color: transparent;
+//             }
+//             .restaurant__icon--regular {
+//                 display: none;
+//             }
+//         }
+//     }
+// }

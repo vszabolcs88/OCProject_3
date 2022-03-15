@@ -1,7 +1,14 @@
+// ohmyfood logo
 .logo {
     width: 40%;
-    height: 10vh;
+    height: 7vh;
     margin: 0 auto;
+    position: relative;
+    &__icon {
+        position: absolute;
+        top: 30%;
+        left: -65%;
+    }
     &__img {
         width: 100%;
         height: 100%;
