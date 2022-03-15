@@ -1,0 +1,22 @@
+.btn {
+    cursor: pointer;
+    &--booking {
+        color: #fff;
+        font-weight: bold;
+        background: linear-gradient(180deg, $secondary-color 5%, $primary-color 80%);
+        padding: 1rem 1.2rem;
+        border-radius: 24px;
+    }
+    &--order {
+        margin: 0 auto;
+        margin-top: 3rem;
+        color: #fff;
+        font-weight: bold;
+        background: linear-gradient(180deg, $secondary-color 5%, $primary-color 80%);
+        padding: 1rem 1.2rem;
+        border-radius: 24px;
+        width: 50%;
+        text-align: center;
+    }
+    
+}

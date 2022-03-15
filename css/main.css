@@ -204,6 +204,32 @@ img {
   display: none;
 }
 
+.btn {
+  cursor: pointer;
+}
+
+.btn--booking {
+  color: #fff;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #FF79DA), color-stop(80%, #9356DC));
+  background: linear-gradient(180deg, #FF79DA 5%, #9356DC 80%);
+  padding: 1rem 1.2rem;
+  border-radius: 24px;
+}
+
+.btn--order {
+  margin: 0 auto;
+  margin-top: 3rem;
+  color: #fff;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #FF79DA), color-stop(80%, #9356DC));
+  background: linear-gradient(180deg, #FF79DA 5%, #9356DC 80%);
+  padding: 1rem 1.2rem;
+  border-radius: 24px;
+  width: 50%;
+  text-align: center;
+}
+
 .map {
   background: #e6e6e6;
   text-align: center;
@@ -243,17 +269,6 @@ img {
 .booking__subtitle {
   text-align: center;
   font-weight: 300;
-}
-
-.booking__button {
-  border: none;
-  color: #fff;
-  font-weight: bold;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #FF79DA), color-stop(80%, #9356DC));
-  background: linear-gradient(180deg, #FF79DA 5%, #9356DC 80%);
-  padding: 1rem 1.2rem;
-  border-radius: 24px;
-  cursor: pointer;
 }
 
 section {
