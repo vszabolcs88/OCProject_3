@@ -9,9 +9,11 @@
   },
   "devDependencies": {},
   "scripts": {
-    "sass": "sass --watch ./SCSS/main.scss:./css/main.css"
+    "sass": "sass --watch ./SCSS/main.scss:./css/main.css",
+    "prefix": "postcss ./css/main.css --use autoprefixer -d ./css/main.css"
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "description": ""
 }

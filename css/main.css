@@ -28,7 +28,7 @@ img {
   font-size: 2rem;
 }
 
-.entress__title {
+.entress__title, .dessert__title, .mdish__title {
   text-transform: uppercase;
 }
 
@@ -37,6 +37,10 @@ img {
 }
 
 .dessert__title {
+  text-transform: uppercase;
+}
+
+.adds__uppercase {
   text-transform: uppercase;
 }
 
