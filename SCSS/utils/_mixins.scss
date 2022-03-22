@@ -5,3 +5,10 @@
     background: linear-gradient(180deg, $secondary-color 5%, $primary-color 80%);
     padding: 1rem 1.2rem;
 }
+
+@mixin btn-hover {
+    color: darken(#fff, 5%);
+    font-weight: bold;
+    background: linear-gradient(180deg, lighten($secondary-color, 2%) 5%, lighten($primary-color, 2%) 80%);
+    padding: 1rem 1.2rem;
+}
