@@ -95,6 +95,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   padding: 0.8rem;
 }
 
@@ -105,6 +107,9 @@ img {
 .card .card-content__icon {
   text-align: right;
   font-size: 1.25rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .card .card-content__icon--regular {
@@ -244,8 +249,8 @@ img {
 .btn--booking:hover {
   color: #f2f2f2;
   font-weight: bold;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ff83dd), color-stop(80%, #985ede));
-  background: linear-gradient(180deg, #ff83dd 5%, #985ede 80%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ff93e1), color-stop(80%, #a16be0));
+  background: linear-gradient(180deg, #ff93e1 5%, #a16be0 80%);
   padding: 1rem 1.2rem;
 }
 
@@ -263,8 +268,8 @@ img {
 .btn--order:hover {
   color: #f2f2f2;
   font-weight: bold;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ff83dd), color-stop(80%, #985ede));
-  background: linear-gradient(180deg, #ff83dd 5%, #985ede 80%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ff93e1), color-stop(80%, #a16be0));
+  background: linear-gradient(180deg, #ff93e1 5%, #a16be0 80%);
   padding: 1rem 1.2rem;
 }
 
@@ -311,6 +316,7 @@ img {
 
 section {
   padding: 2rem;
+  margin: 0 auto;
 }
 
 section .instruction {
@@ -324,6 +330,7 @@ section .instruction {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 40vh;
+  max-width: 30rem;
 }
 
 section .instruction__block {
@@ -381,6 +388,30 @@ main {
   background-color: #f2f2f2;
 }
 
+@media screen and (min-width: 600px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 2%;
+  }
+  main > .card {
+    width: 48%;
+  }
+  main .main__title {
+    width: 100%;
+  }
+}
+
 .main__title {
   padding: 1.5rem 0;
 }
@@ -405,5 +436,20 @@ main {
 
 .footer-list__item--first {
   font-family: 'Shrikhand', cursive;
+}
+
+@media screen and (min-width: 600px) {
+  .footer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */

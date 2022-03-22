@@ -33,12 +33,14 @@
 
 section {
     padding: 2rem;
+    margin: 0 auto;
 
     .instruction {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         height: 40vh;
+        max-width: 30rem;
 
         &__block {
             display: flex;

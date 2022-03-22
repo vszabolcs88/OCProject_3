@@ -9,6 +9,6 @@
 @mixin btn-hover {
     color: darken(#fff, 5%);
     font-weight: bold;
-    background: linear-gradient(180deg, lighten($secondary-color, 2%) 5%, lighten($primary-color, 2%) 80%);
+    background: linear-gradient(180deg, lighten($secondary-color, 5%) 5%, lighten($primary-color, 5%) 80%);
     padding: 1rem 1.2rem;
 }

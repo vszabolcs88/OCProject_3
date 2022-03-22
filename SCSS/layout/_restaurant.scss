@@ -3,6 +3,19 @@ main {
     padding: 3rem 0.75rem;
     padding-top: 0;
     background-color: darken(#fff, 5%);
+    @media screen and (min-width: 600px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2%;
+        & > .card {
+            width: 48%;
+        }
+        .main__title {
+            width: 100%;
+        }
+    }
 }
 
 .main__title {

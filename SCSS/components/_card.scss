@@ -23,6 +23,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+        align-content: space-between;
         padding: 0.8rem;
         &__title {
             font-weight: bold;
@@ -30,6 +31,7 @@
         &__icon {
             text-align: right;
             font-size: 1.25rem;
+            width: fit-content;
             &--regular {
                 display: block;
             }
