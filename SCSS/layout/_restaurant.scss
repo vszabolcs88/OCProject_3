@@ -7,13 +7,19 @@ main {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         gap: 2%;
         & > .card {
             width: 48%;
         }
         .main__title {
             width: 100%;
+        }
+        .restaurant {
+            width: 75%;
+        }
+        .entrees, .mdish, .dessert {
+            width: 75%;
         }
     }
 }

@@ -230,6 +230,7 @@ img {
   transition: -webkit-box-shadow 250ms ease-in;
   transition: box-shadow 250ms ease-in;
   transition: box-shadow 250ms ease-in, -webkit-box-shadow 250ms ease-in;
+  max-width: 14rem;
 }
 
 .btn:hover {
@@ -319,6 +320,27 @@ section {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 600px) {
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  section h2 {
+    width: 60%;
+  }
+}
+
 section .instruction {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,6 +353,12 @@ section .instruction {
       justify-content: space-around;
   height: 40vh;
   max-width: 30rem;
+}
+
+@media screen and (min-width: 600px) {
+  section .instruction {
+    width: 60%;
+  }
 }
 
 section .instruction__block {
@@ -382,6 +410,12 @@ section .instruction__block:hover i {
      object-fit: cover;
 }
 
+@media screen and (min-width: 900px) {
+  .header__img {
+    height: 50vh;
+  }
+}
+
 main {
   padding: 3rem 0.75rem;
   padding-top: 0;
@@ -399,9 +433,9 @@ main {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 2%;
   }
   main > .card {
@@ -409,6 +443,12 @@ main {
   }
   main .main__title {
     width: 100%;
+  }
+  main .restaurant {
+    width: 75%;
+  }
+  main .entrees, main .mdish, main .dessert {
+    width: 75%;
   }
 }
 

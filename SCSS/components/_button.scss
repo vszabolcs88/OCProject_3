@@ -4,6 +4,7 @@
     text-align: center;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 250ms ease-in;
+    max-width: 14rem;
     &:hover {
         box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.45);
     }

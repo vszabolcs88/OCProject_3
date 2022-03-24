@@ -31,9 +31,20 @@
 
 }
 
+// how it works section
 section {
     padding: 2rem;
     margin: 0 auto;
+    @media screen and(min-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2 {
+        @media screen and(min-width: 600px) {
+            width: 60%;
+        }
+    }
 
     .instruction {
         display: flex;
@@ -41,6 +52,9 @@ section {
         justify-content: space-around;
         height: 40vh;
         max-width: 30rem;
+        @media screen and(min-width: 600px) {
+            width: 60%;
+        }
 
         &__block {
             display: flex;
