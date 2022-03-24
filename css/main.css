@@ -195,7 +195,9 @@ img {
 }
 
 .restaurant__icon {
-  width: 10%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-size: 1.25rem;
 }
 
@@ -295,8 +297,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -335,9 +338,29 @@ section {
   }
 }
 
+@media screen and (min-width: 953px) {
+  section {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    row-gap: 1rem;
+    padding: 2rem 0.75rem;
+    height: 15rem;
+  }
+}
+
 @media screen and (min-width: 600px) {
   section h2 {
     width: 60%;
+  }
+}
+
+@media screen and (min-width: 953px) {
+  section h2 {
+    margin-left: 12.5px;
   }
 }
 
@@ -352,12 +375,22 @@ section .instruction {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 40vh;
-  max-width: 30rem;
 }
 
 @media screen and (min-width: 600px) {
   section .instruction {
     width: 60%;
+  }
+}
+
+@media screen and (min-width: 953px) {
+  section .instruction {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: auto;
   }
 }
 
@@ -379,6 +412,12 @@ section .instruction__block {
   transition: -webkit-box-shadow 250ms ease-in;
   transition: box-shadow 250ms ease-in;
   transition: box-shadow 250ms ease-in, -webkit-box-shadow 250ms ease-in;
+}
+
+@media screen and (min-width: 953px) {
+  section .instruction__block {
+    width: 30%;
+  }
 }
 
 section .instruction__block :nth-child(1) {
@@ -449,6 +488,30 @@ main {
   }
   main .entrees, main .mdish, main .dessert {
     width: 75%;
+  }
+  main .btn-container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 953px) {
+  main {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1%;
+  }
+  main > .card {
+    width: 23%;
+  }
+  main .restaurant {
+    width: 50%;
+  }
+  main .entrees, main .mdish, main .dessert {
+    width: 50%;
+  }
+  main .btn-container {
+    width: 100%;
   }
 }
 

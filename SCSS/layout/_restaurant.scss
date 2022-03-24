@@ -21,6 +21,25 @@ main {
         .entrees, .mdish, .dessert {
             width: 75%;
         }
+        .btn-container {
+            width: 100%;
+        }
+    }
+    @media screen and (min-width: 953px) {
+        justify-content: center;
+        gap: 1%;
+        & > .card {
+            width: 23%;
+        }
+        .restaurant {
+            width: 50%;
+        }
+        .entrees, .mdish, .dessert {
+            width: 50%;
+        }
+        .btn-container {
+            width: 100%;
+        }
     }
 }
 
