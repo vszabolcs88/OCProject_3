@@ -555,4 +555,17 @@ main {
             align-items: center;
   }
 }
+
+@media screen and (min-width: 953px) {
+  .footer-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 25vh;
+  }
+}
 /*# sourceMappingURL=main.css.map */
