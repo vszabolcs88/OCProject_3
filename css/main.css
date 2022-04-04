@@ -157,12 +157,54 @@ img {
           box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
 }
 
+.dish:nth-child(3) {
+  -webkit-animation: add-transform 1000ms both;
+          animation: add-transform 1000ms both;
+}
+
+.dish:nth-child(4) {
+  -webkit-animation: add-transform 1100ms both;
+          animation: add-transform 1100ms both;
+}
+
+.dish:nth-child(5) {
+  -webkit-animation: add-transform 1200ms both;
+          animation: add-transform 1200ms both;
+}
+
+.dish:nth-child(6) {
+  -webkit-animation: add-transform 1300ms both;
+          animation: add-transform 1300ms both;
+}
+
 .dish__title {
   font-weight: bold;
 }
 
 .dish__price {
   font-weight: bold;
+}
+
+@-webkit-keyframes add-transform {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes add-transform {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 .underline {
@@ -525,6 +567,29 @@ main {
   padding-top: 1.5rem;
   position: relative;
   z-index: 2;
+}
+
+.add__border .entrees, .add__border .mdish, .add__border .dessert {
+  -webkit-animation: add-opacity 3000ms both;
+          animation: add-opacity 3000ms both;
+}
+
+@-webkit-keyframes add-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes add-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .footer-list {

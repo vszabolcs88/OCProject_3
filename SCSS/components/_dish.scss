@@ -11,10 +11,33 @@
     margin: 1rem 0;
     padding: 1rem;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+
+    &:nth-child(3){
+        animation: add-transform 1000ms both;
+    }
+    &:nth-child(4) {
+        animation: add-transform 1100ms both;
+    }
+    &:nth-child(5) {
+        animation: add-transform 1200ms both;
+    }
+    &:nth-child(6) {
+        animation: add-transform 1300ms both;
+    }
     &__title{
         font-weight: bold;
     }
     &__price {
         font-weight: bold;
+    }
+}
+
+
+@keyframes add-transform {
+    0% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
     }
 }
