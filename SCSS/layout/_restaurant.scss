@@ -4,7 +4,7 @@ main {
     padding-top: 0;
     background-color: darken(#fff, 5%);
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -26,7 +26,7 @@ main {
             width: 100%;
         }
     }
-    @media screen and (min-width: 953px) {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
         justify-content: center;
         gap: 1%;
         & > .card {

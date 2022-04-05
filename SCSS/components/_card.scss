@@ -3,10 +3,10 @@
     width: 100%;
     height: 35vh;
     border-radius: 16px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     margin-bottom: 1rem;
     position: relative;
     transition: box-shadow 250ms ease-out;
+    @include shadow;
     &__image {
         height: 70%;
         & img {
@@ -15,7 +15,7 @@
         }
     }
     &:hover {
-        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        @include shadow-hover;
     }
     .card-content {
         height: 30%;

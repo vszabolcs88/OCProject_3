@@ -19,7 +19,7 @@
         height: 100%;
         object-fit: contain;
     }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         padding: 0.5rem;
     }
 }
