@@ -56,16 +56,4 @@ main {
     padding-top: 1.5rem;
     position: relative;
     z-index: 2;
-    .entrees, .mdish, .dessert {
-        animation:  add-opacity 3000ms both;
-    }
-}
-
-@keyframes add-opacity {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
