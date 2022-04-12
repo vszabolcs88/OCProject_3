@@ -253,8 +253,8 @@ img {
   background-color: #99E2D0;
   cursor: pointer;
   width: 0rem;
-  -webkit-transition: width 750ms;
-  transition: width 750ms;
+  -webkit-transition: width 750ms ease-out;
+  transition: width 750ms ease-out;
   overflow: hidden;
 }
 
@@ -265,10 +265,10 @@ img {
   padding: 0.1rem;
   -webkit-transform: rotateZ(0) scale(1.1);
           transform: rotateZ(0) scale(1.1);
-  -webkit-transition: -webkit-transform 750ms ease-in-out;
-  transition: -webkit-transform 750ms ease-in-out;
-  transition: transform 750ms ease-in-out;
-  transition: transform 750ms ease-in-out, -webkit-transform 750ms ease-in-out;
+  -webkit-transition: -webkit-transform 650ms linear;
+  transition: -webkit-transform 650ms linear;
+  transition: transform 650ms linear;
+  transition: transform 650ms linear, -webkit-transform 650ms linear;
 }
 
 @-webkit-keyframes add-transform {
