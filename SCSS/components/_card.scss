@@ -37,6 +37,7 @@
             }
             &--solid {
                 display: none;
+                opacity: 0;
             }
             &:hover {
                 .card-content__icon--solid {
@@ -48,6 +49,8 @@
                     -moz-background-clip: text;
                     background-clip: text;
                     -webkit-text-fill-color: transparent;
+                    opacity: 1;
+                    transition: opacity 500ms;
                 }
                 .card-content__icon--regular {
                     display: none;
