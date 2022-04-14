@@ -1,0 +1,38 @@
+// Animation of dishes:
+
+$anim-dur: 800ms;
+$num-dish: 4;
+$anim-delay: $anim-dur / $num-dish;
+
+.menu-items {
+    animation: add-transform $anim-dur both linear, addOpacity $anim-dur both linear;
+    @for $i from 1 through $num-dish {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
+    }
+}
+
+@keyframes add-transform {
+    0% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes addOpacity {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    75% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
