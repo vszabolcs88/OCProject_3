@@ -16,14 +16,7 @@
         }
         &:hover {
             .restaurant__icon--solid {
-                display: block;
-                background: -moz-linear-gradient(top, $primary-color 20%, $secondary-color 100%);
-                background: -webkit-linear-gradient(top, $primary-color 20%, $secondary-color 100%);
-                background: linear-gradient(to bottom, $primary-color 20%, $secondary-color 100%);
-                -webkit-background-clip: text;
-                -moz-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
+               @include heart;
             }
             .restaurant__icon--regular {
                 display: none;

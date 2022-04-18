@@ -25,3 +25,13 @@
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
+// heart icon:
+
+@mixin heart {
+    display: block;
+    background: linear-gradient( $primary-color, $secondary-color);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
