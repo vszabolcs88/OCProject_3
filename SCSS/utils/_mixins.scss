@@ -14,7 +14,6 @@
 }
 
 
-
 // box-shadows:
 
 @mixin shadow {
@@ -34,4 +33,11 @@
     -webkit-text-fill-color: transparent;
 }
 
+@mixin text-overflow {
+    display: block;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 

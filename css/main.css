@@ -213,6 +213,7 @@ img {
 
 .menu-items .menu-item .dish__ingredients {
   display: block;
+  font-weight: bold;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

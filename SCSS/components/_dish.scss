@@ -27,17 +27,10 @@
             flex-basis: 100%;
             overflow: hidden;
             &__name {
-                display: block;
-                font-weight: bold;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
+                @include text-overflow;
             }
             &__ingredients {
-                display: block;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
+                @include text-overflow;
             }
         }
         &__price {
