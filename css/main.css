@@ -25,7 +25,7 @@ img {
 
 .title {
   font-family: 'Shrikhand', cursive;
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 .entress__title, .dessert__title, .mdish__title {
@@ -358,21 +358,39 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 1rem;
+  padding-right: 0.5rem;
 }
 
 .restaurant__icon {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 5%;
   font-size: 1.25rem;
+  position: relative;
 }
 
 .restaurant__icon--regular {
   display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+  -webkit-transition: opacity 350ms linear;
+  transition: opacity 350ms linear;
 }
 
 .restaurant__icon--solid {
-  display: none;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -10;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  -webkit-transition: opacity 350ms linear;
+  transition: opacity 350ms linear;
 }
 
 .restaurant__icon:hover .restaurant__icon--solid {
@@ -381,10 +399,11 @@ img {
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: 1;
 }
 
 .restaurant__icon:hover .restaurant__icon--regular {
-  display: none;
+  opacity: 0;
 }
 
 .btn {
