@@ -30,12 +30,12 @@
     display: block;
     background: linear-gradient( $primary-color, $secondary-color);
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 @mixin text-overflow {
     display: block;
-    font-weight: bold;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

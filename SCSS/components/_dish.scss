@@ -28,6 +28,7 @@
             overflow: hidden;
             &__name {
                 @include text-overflow;
+                font-weight: bold;
             }
             &__ingredients {
                 @include text-overflow;

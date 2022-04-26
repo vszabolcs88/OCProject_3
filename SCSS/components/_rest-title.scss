@@ -18,7 +18,7 @@
             transform: translate(-50%, -50%);
             cursor: pointer;
             opacity: 1;
-            transition: opacity 350ms linear;
+            transition: opacity 150ms linear;
         }
         &--solid {
             display: block;
@@ -28,9 +28,12 @@
             transform: translate(-50%, -50%);
             cursor: pointer;
             z-index: -10;
-            -webkit-text-fill-color: transparent;
+            // -webkit-text-fill-color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
             opacity: 0;
-            transition: opacity 350ms linear;
+            transition: opacity 550ms linear;
         }
         &:hover {
             .restaurant__icon--solid {

@@ -143,7 +143,8 @@ img {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
   opacity: 1;
   -webkit-transition: opacity 500ms;
   transition: opacity 500ms;
@@ -205,15 +206,14 @@ img {
 
 .menu-items .menu-item .dish__name {
   display: block;
-  font-weight: bold;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-weight: bold;
 }
 
 .menu-items .menu-item .dish__ingredients {
   display: block;
-  font-weight: bold;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -377,8 +377,8 @@ img {
           transform: translate(-50%, -50%);
   cursor: pointer;
   opacity: 1;
-  -webkit-transition: opacity 350ms linear;
-  transition: opacity 350ms linear;
+  -webkit-transition: opacity 150ms linear;
+  transition: opacity 150ms linear;
 }
 
 .restaurant__icon--solid {
@@ -390,10 +390,12 @@ img {
           transform: translate(-50%, -50%);
   cursor: pointer;
   z-index: -10;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   opacity: 0;
-  -webkit-transition: opacity 350ms linear;
-  transition: opacity 350ms linear;
+  -webkit-transition: opacity 550ms linear;
+  transition: opacity 550ms linear;
 }
 
 .restaurant__icon:hover .restaurant__icon--solid {
@@ -401,7 +403,8 @@ img {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
   opacity: 1;
 }
 
