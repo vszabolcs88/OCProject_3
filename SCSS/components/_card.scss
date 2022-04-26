@@ -20,33 +20,48 @@
     .card-content {
         height: 30%;
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: space-between;
+        justify-content: space-between;
+        align-items: center;
         padding: 0.8rem;
-        &__title {
-            font-weight: bold;
+        &__titles {
+            flex-basis: 100%;
+            .card-title  {
+                font-weight: bold;
+            }
         }
         &__icon {
-            text-align: right;
             font-size: 1.25rem;
-            width: fit-content;
+            position: relative;
+            width: 20px;
             &--regular {
                 display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+                opacity: 1;
+                transition: opacity 250ms linear;
             }
             &--solid {
-                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                cursor: pointer;
                 opacity: 0;
+                transition: opacity 450ms linear;
             }
             &:hover {
                 .card-content__icon--solid {
                     @include heart;
                     opacity: 1;
-                    transition: opacity 500ms;
                 }
                 .card-content__icon--regular {
-                    display: none;
+                    opacity: 0;
                 }
             }    
         }
