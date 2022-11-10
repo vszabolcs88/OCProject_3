@@ -35,6 +35,7 @@
     color: transparent;
 }
 
+// clipping overflown text in the menu
 @mixin text-overflow {
     display: block;
     overflow: hidden;
