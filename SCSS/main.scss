@@ -1,25 +1,11 @@
-// 1.Utils
-    // Variables
-    // Functions
-    // Mixins
-    // Placeholders
-
-// 2.Vendors
-// 3.Base
-// 4.Components
-// 5.Layout
-// 6.Pages
-// 7.Themes
-
-
-
+//Utils:
 @import 'utils/variables';
 @import 'utils/mixins';
 @import 'utils/maps';
-
+//Base:
 @import 'base/resets';
 @import 'base/typography';
-
+//Components:
 @import 'components/logo';
 @import 'components/card';
 @import 'components/dish';
@@ -29,7 +15,7 @@
 @import 'components/rest-title';
 @import 'components/button';
 @import 'components/loadingSpinner';
-
+//Layout:
 @import 'layout/header';
 @import 'layout/header-img';
 @import 'layout/restaurant';
